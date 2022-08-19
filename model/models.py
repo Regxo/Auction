@@ -10,9 +10,9 @@ class item(models.Model):
   less_than_reserve = 0
   zero_bids_items = 0
   min_items = 10
-  current_highest_bid = [0.0]*n
-  item_bids = [0]*n
-  item_description = []*n
-  reserve_price = []*n
-  item_numbers = []*n
-  buyer_no_Array = [0]*n
+  current_highest_bid = [0.0]
+  item_bids = [0]
+  item_description = []
+  reserve_price = []
+  item_numbers = []
+  buyer_no_Array = [0]

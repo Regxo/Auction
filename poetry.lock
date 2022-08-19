@@ -27,6 +27,33 @@ argon2 = ["argon2-cffi (>=19.1.0)"]
 bcrypt = ["bcrypt"]
 
 [[package]]
+name = "fantasy-football-auction"
+version = "0.9.97"
+description = "Python library simulating a fantasy football auction. Intended to be used for AI, but you should be able to use this for other purposes as well. This task assumes that each draftable player has a specific value (for example, looking at the ratings from FantasyPros)."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[[package]]
+name = "mindpowered-englishauction"
+version = "0.0.64"
+description = "Online auctions with ascending price and time limit"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+mindpowered-maglev = "*"
+
+[[package]]
+name = "mindpowered-maglev"
+version = "0.7.21"
+description = "Internal Communication Bus"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "pytz"
 version = "2022.1"
 description = "World timezone definitions, modern and historical"
@@ -45,22 +72,17 @@ python-versions = ">=3.5"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "258c756954908c648e7416565d2696cc0e68284931f1dfc9b8d60e0325321315"
+content-hash = "8983e542412a153a653e8d3d26dc466a1b2c1218be50dfcfe3e6f11ba0272439"
 
 [metadata.files]
-asgiref = [
-    {file = "asgiref-3.5.1-py3-none-any.whl", hash = "sha256:45a429524fba18aba9d512498b19d220c4d628e75b40cf5c627524dbaebc5cc1"},
-    {file = "asgiref-3.5.1.tar.gz", hash = "sha256:fddeea3c53fa99d0cdb613c3941cc6e52d822491fc2753fba25768fb5bf4e865"},
+asgiref = []
+django = []
+fantasy-football-auction = [
+    {file = "fantasy_football_auction-0.9.97.tar.gz", hash = "sha256:7bb1ce6d8411e27cdd825a62321f5dc7c1233d2428122710a7520fb51f5dca43"},
 ]
-django = [
-    {file = "Django-3.2.13-py3-none-any.whl", hash = "sha256:b896ca61edc079eb6bbaa15cf6071eb69d6aac08cce5211583cfb41515644fdf"},
-    {file = "Django-3.2.13.tar.gz", hash = "sha256:6d93497a0a9bf6ba0e0b1a29cccdc40efbfc76297255b1309b3a884a688ec4b6"},
+mindpowered-englishauction = []
+mindpowered-maglev = [
+    {file = "mindpowered_maglev-0.7.21-py3-none-any.whl", hash = "sha256:f5c45954f0b5262eba05afe63f02e53da595644cd20e64b692fca05c63c583ca"},
 ]
-pytz = [
-    {file = "pytz-2022.1-py2.py3-none-any.whl", hash = "sha256:e68985985296d9a66a881eb3193b0906246245294a881e7c8afe623866ac6a5c"},
-    {file = "pytz-2022.1.tar.gz", hash = "sha256:1e760e2fe6a8163bc0b3d9a19c4f84342afa0a2affebfaa84b01b978a02ecaa7"},
-]
-sqlparse = [
-    {file = "sqlparse-0.4.2-py3-none-any.whl", hash = "sha256:48719e356bb8b42991bdbb1e8b83223757b93789c00910a616a071910ca4a64d"},
-    {file = "sqlparse-0.4.2.tar.gz", hash = "sha256:0c00730c74263a94e5a9919ade150dfc3b19c574389985446148402998287dae"},
-]
+pytz = []
+sqlparse = []
