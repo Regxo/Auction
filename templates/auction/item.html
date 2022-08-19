@@ -1,0 +1,12 @@
+<!-- templates/auction/item_submission.html -->
+{% extends 'base.html' %}
+
+{% block title %}item Submission{% endblock %}
+
+<form action="/your-name/" method="post">
+    <label for="item_name">Item name: </label>
+    <input id="item_name" type="text" name="item_name" value="{{ current_name }}">
+    <input type="submit" value="OK">
+</form>
+
+{% endblock %}
